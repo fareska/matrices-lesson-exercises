@@ -1,5 +1,20 @@
 /* Write your code below */
+const matrix = require('./Matrix.js')
 
+
+class EmployeeMatrix extends matrix{
+    constructor(rows, cols){
+        super(rows, cols)
+
+    }
+
+    loadData(salaryData){
+        for(let i=0; i<salaryData.length; i++){
+            let valArr= Object.values(salaryData[i])
+            this.matrix.push(valArr)
+        }
+    }
+}
 
 
 
